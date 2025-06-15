@@ -35,9 +35,10 @@
 // Знижка 3% надається, якщо сума покупки більша за 500 грн., а знижка 5% - якщо сума покупки більша за 800 грн.
 
 let sumUser = Number(prompt('Введіть суму покупки'));
-if (sumUser >= 500) {
-    console.log('Знижка 3%:', sumUser - 3%)
-} else (sumUser >= 800) {
-        console.log('Знижка 3%:', sumUser - 3%)
-
+if (sumUser >= 500 && sumUser < 800) {
+    console.log('Сума зі знижкою 3%:', sumUser - (sumUser*3)/100);
+} else if (sumUser >= 800) {
+    console.log('Сума зі знижкою 5%:', sumUser - (sumUser*5)/100);
+} else {
+    console.log('Сума', sumUser);
 }
