@@ -6,20 +6,23 @@
 // темний текст на світлому тлі, якщо зараз день,
 // світлий текст на темному тлі, якщо зараз ніч.
 
-// const isDay = true;
+const isDay = false;
 
-// let color = null;
-// if (isDay) {
-//   color = "black";
-// } else {
-//   color = "white";
-// }
+let color = null;
+let backgroundColor = null;
+if (isDay) {
+  color = "black";
+  backgroundColor = "white"
+} else {
+  color = "white";
+  backgroundColor = "black"
+}
 
-// if (isDay) {
-//   document.write(`<p style="color:${color};background-color:white;">Світла тема</p>`);
-// } else {
-//   document.write(`<p style="color:${color};background-color:black;">Темна тема</p>`);
-// }
+if (isDay) {
+  document.write(`<p style="color:${color};background-color:${backgroundColor};">Світла тема</p>`);
+} else {
+  document.write(`<p style="color:${color};background-color:${backgroundColor};">Темна тема</p>`);
+}
 
 // 2. Відомо, чи користувач онлайн (isOnline).
 // Якщо користувач НЕ онлайн, то вивести попередження "Ваше повідомлення буде відправлено при під'єднанні до мережі Інтернет"
@@ -89,17 +92,17 @@
 
 // 2. (за бажанням) У змінній day лежить якесь число з інтервалу від 1 до 31. Визначте, до якої декади місяця потрапляє це число (до першої, другої чи третьої). Наприклад, число 1 - це перша декада, 20 - друга, 25 - третя.
 
-let arg = Number(prompt("Введіть значення?"));
-switch (true) {
-  case arg >= 1 && arg <= 10:
-    alert("Перша декада");
-    break;
-  case arg >= 11 && arg <= 20:
-    alert("Друга декада");
-    break;
-  case arg >= 21 && arg <= 31:
-    alert("Третя декада");
-    break;
-  default:
-    alert("Невідоме значення");
-}
+// let arg = Number(prompt("Введіть значення?"));
+// switch (true) {
+//   case arg >= 1 && arg <= 10:
+//     alert("Перша декада");
+//     break;
+//   case arg >= 11 && arg <= 20:
+//     alert("Друга декада");
+//     break;
+//   case arg >= 21 && arg <= 31:
+//     alert("Третя декада");
+//     break;
+//   default:
+//     alert("Невідоме значення");
+// }
